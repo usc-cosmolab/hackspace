@@ -1,4 +1,4 @@
-# Cosmolab meeting: 10/4/19
+# CosmoLab meeting: 10/4/19
 
 We discussed the four principles Dr. Morton proposed as motivating these weekly tutorials: efficiency, portability,
 reproducibility, and employability.
