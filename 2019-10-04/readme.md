@@ -31,7 +31,7 @@ doing this.
 ## Miniconda
 
 *Conda* is a very useful (and widely used) program to manage package installation and environments.  We will talk more about this
-next week, but if you don't already have •conda• available on your machine (check with `which conda`), install
+next week, but if you don't already have *conda* available on your machine (check with `which conda`), install
 it by downloading the appropriate bash script installer from [here](https://docs.conda.io/en/latest/miniconda.html),
 and executing it with `bash Mini<tab>`.  We briefly discussed the concept of an "environment"; again, we will
 go into more detail next week on this.
