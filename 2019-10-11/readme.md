@@ -1,6 +1,6 @@
 # CosmoLab meeting: 10/11/19
 
-Present:
+Attending:
 
 By the end of this meeting, you will be able to:
 
@@ -29,6 +29,11 @@ By the end of this meeting, you will be able to:
 
 ## Using conda to install modules and manage environments
 
+If `which conda` tells you that you have conda available on your system, you're good to go.
+Otherwise, download and run the appropriate installer from [here](https://docs.conda.io/en/latest/miniconda.html).
+
 
 --------------------------
 ## Cosmic microwave background introduction (Siavash)
+
+Notebook [here](https://github.com/syasini/cmb_tutorials/blob/master/power_spectrum.ipynb)

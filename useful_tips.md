@@ -1,4 +1,4 @@
-# Running list of random useful tips
+# Running list of random useful productivity tips
 
 * Terminal shortcuts:
     - `ctl + a` beginning of line
