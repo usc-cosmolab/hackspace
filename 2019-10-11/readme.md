@@ -2,7 +2,7 @@
 
 By the end of this meeting, you will be able to:
 
-* Be familiar with basic python commands
+* Use and interpret python commands
 * Import and use built-in python modules
 * Install third-party python modules with `pip` and `conda`
 * Create environments with `conda`
