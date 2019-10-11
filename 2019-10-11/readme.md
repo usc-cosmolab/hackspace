@@ -1,6 +1,7 @@
 # CosmoLab meeting: 10/11/19
 
-Attending:
+Attending: Connor Powers, Austin Cox, Aryan Rahimieh, Remi Gerras, Isabella Johansson, Vera Gluscevic, Sydney Feldman,
+            Karime Maamari, Siavash Yasini, Javi Zhao, Tim Morton
 
 By the end of this meeting, you will be able to:
 
@@ -34,6 +35,6 @@ Otherwise, download and run the appropriate installer from [here](https://docs.c
 
 
 --------------------------
-## Cosmic microwave background introduction (Siavash)
+## Cosmic microwave background / power spectrum introduction (Siavash)
 
 Notebook [here](https://github.com/syasini/cmb_tutorials/blob/master/power_spectrum.ipynb)
