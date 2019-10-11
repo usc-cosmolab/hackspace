@@ -15,3 +15,5 @@ By the end of this meeting, you will be able to:
 ## Python modules
 
 ## Using conda to install modules and manage environments
+
+## Cosmic microwave background introduction (Siavash)
