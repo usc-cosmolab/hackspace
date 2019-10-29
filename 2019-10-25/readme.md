@@ -1,6 +1,6 @@
 # CosmoLab meeting: 10/25/19
 
-Attending:
+Attending: Vera, Tim, Siavash, Javier, Sidney, Aryan, Jack, Isabella, Karime, Elena
 
 By the end of this meeting, you should be able to
 
@@ -11,6 +11,12 @@ By the end of this meeting, you should be able to
   * `git commit`
   * `git push`
 * Read in and plot data from a file
+
+## Paper
+
+"Novel constraints on non-cold (non-thermal) Dark Matter from Lyman-alpha forest data"
+
+
 
 ## Exercise (intro to using git and visualizing data)
 
