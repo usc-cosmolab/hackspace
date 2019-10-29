@@ -33,7 +33,6 @@ and visualize the lyman-alpha data from the usc-cosmolab repo (`data/lyman-alpha
 
 ## Resources
 
-arxiv:1905.08103
-Data from https://github.com/marius311/mpk_compilation
-
-[Understanding git conceptually](https://www.sbf5.com/~cduan/technical/git/)
+* arxiv:1905.08103
+* Data from https://github.com/marius311/mpk_compilation
+* [Understanding git conceptually](https://www.sbf5.com/~cduan/technical/git/)
