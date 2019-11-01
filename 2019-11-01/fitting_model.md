@@ -4,9 +4,20 @@ Try to answer the following questions as precisely as possible:
 
 * What is "data"?
 
+  * measurements & errors on measurements
+  * Observations and information obtained from instruments in numerical
+  * 3 numpy arrays…. x data, y data, y_error, all of same length
+
 * What is a "model"?
 
+  * function with adjustable parameters
+  * makes a prediction
+  * input: x and choices of parameter(s)
+  * output: "y" (the theoretical prediction) 
+
 * What does "fit" mean?
+
+  * goal: find the parameters of the model that make the predicted y-values "as close as possibile" to the measured y-values.
 
   
 
@@ -41,7 +52,7 @@ def model(...):  # fill in necessary arguments
 
 Write a function that generates some fake data according to the above model, as well as uncertainties.  You should be calling the function you wrote above somewhere in this function.
 
-Generate some random x-values, and add a different normal-distributed random noise to each y-value.
+Generate some random x-values, and add a *different* normal-distributed random noise to each y-value.
 
 ```python
 def generate_data(...):  # fill in necessary arguments
