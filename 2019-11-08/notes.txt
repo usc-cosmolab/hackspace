@@ -1,0 +1,21 @@
+* re-intro
+* plot bad fit (and good fit?)
+* discuss parameters & what a fit means (model is a parameterized function)
+* review the assignment
+
+DISCUSSION PROMPTS
+
+CLASS
+* say that the function that we will end up fitting to the data will end up being a fucntion that class calculates
+* 3-minute blurb about Makefile
+* example of running class from command line (Vera)
+* and THEN class vs. classy [& running from python (please)]
+* discuss ini file
+* make plot of clTT (when i want them to be doing this in a .py file and execute from command line)
+* [individual tasks if finished] make different plots (e.g., with params changed a bit)
+
+PHYSICS DISCUSSION
+* what Cl's mean
+
+CLOSE
+* prompt (remind) to commit and push
