@@ -1,7 +1,7 @@
 # CosmoLab meeting: 10/11/19
 
-Attending: Connor Powers, Austin Cox, Aryan Rahimieh, Remi Gerras, Isabella Johansson, Vera Gluscevic, Sydney Feldman,
-            Karime Maamari, Siavash Yasini, Javi Zhao, Tim Morton
+Attending: Connor Powers, Austin Cox, Aryan Rahimieh, Remy Gerras, Isabella Johansson, Vera Gluscevic, Sydney Feldman,
+            Karime Maamari, Siavash Yasini, Javier Zhao, Tim Morton.
 
 Goals for this meeting:
 
