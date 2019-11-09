@@ -19,7 +19,9 @@ For the rest of the semester, we'll be developing coding/research tools with a p
 Useful papers:
 
 [Matter power spectrum: from Lyα forest to CMB scales](https://arxiv.org/abs/1905.08103)
+
 [Novel constraints on non-cold (non-thermal) Dark Matter from Lyman-alpha forest data](https://arxiv.org/abs/1806.08371)
+
 [Cosmological Probes of Dark Matter Interactions: The Next Decade](https://arxiv.org/abs/1903.05140)
 
 
