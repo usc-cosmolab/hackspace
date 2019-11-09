@@ -1,14 +1,7 @@
 # usc-cosmolab-hackspace
 
-Why are we doing this?
+Materials from USC CosmoLab weekly meetings live here.
 
-* Efficiency
-* Portability
-* Reproducibility
-* Employability
+Meetings have roughly three pars: Hacks, News, and Physics. In Fall 2019, the focus is on Hacks, with the main objective to provide astro grads, undergrads, and postdocs with computer-based tools for research. 
 
-
-## Weekly minutes
-
-[10/4/2019](2019-10-04):  Introduction to the terminal, `$PATH`, etc.  Brief discussion of https://arxiv.org/abs/1812.10919.
-
+Meeting policy: CosmoLab is a safe learning space for cosmologists at USC to ask questions and to collaboratively think about the big problems in physics. Competition and judgement should be left for other venues; curiosity, critical thinking, and collegiality are welcome.
