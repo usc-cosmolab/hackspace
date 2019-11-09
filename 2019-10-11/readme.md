@@ -25,6 +25,8 @@ Goals for this meeting:
 * Built-in modules
 * External modules
 
+To deeper into `python` coding, see an [online python tutorial](https://docs.python.org/3/tutorial/).
+
 ## Using conda to install modules and manage environments
 
 If `which conda` tells you that you have conda available on your system, you're good to go.
