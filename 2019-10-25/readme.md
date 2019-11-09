@@ -1,6 +1,6 @@
 # CosmoLab meeting: 10/25/19
 
-Attending: Vera, Tim, Siavash, Javier, Sidney, Aryan, Jack, Isabella, Karime, Elena
+Attending: Vera Gluscevic, Tim Morton, Siavash Yasini, Javier Zhao, Sidney Feldman, Aryan Rahimieh, Jack Lashner, Isabella Johansson, Karime Maamari, Elena Pierpaoli.
 
 By the end of this meeting, you should be able to
 
@@ -12,10 +12,15 @@ By the end of this meeting, you should be able to
   * `git push`
 * Read in and plot data from a file
 
-## Paper
+## Hands-on CosmoLab goal for fall 2019
 
-"Novel constraints on non-cold (non-thermal) Dark Matter from Lyman-alpha forest data"
+For the rest of the semester, we'll be developing coding/research tools with a practical goal in mind: look for evidence of dark matter interactions in Lyman-alpha data.
 
+Useful papers:
+
+[Matter power spectrum: from Lyα forest to CMB scales](https://arxiv.org/abs/1905.08103)
+[Novel constraints on non-cold (non-thermal) Dark Matter from Lyman-alpha forest data](https://arxiv.org/abs/1806.08371)
+[Cosmological Probes of Dark Matter Interactions: The Next Decade](https://arxiv.org/abs/1903.05140)
 
 
 ## Exercise (intro to using git and visualizing data)
@@ -33,6 +38,5 @@ and visualize the lyman-alpha data from the usc-cosmolab repo (`data/lyman-alpha
 
 ## Resources
 
-* arxiv:1905.08103
 * Data from https://github.com/marius311/mpk_compilation
 * [Understanding git conceptually](https://www.sbf5.com/~cduan/technical/git/)
