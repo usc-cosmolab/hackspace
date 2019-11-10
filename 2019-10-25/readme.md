@@ -12,6 +12,10 @@ By the end of this meeting, you should be able to
   * `git push`
 * Read in and plot data from a file
 
+## Physics discussion
+
+Dr. Yasini summarized the following paper: [Novel constraints on non-cold (non-thermal) Dark Matter from Lyman-alpha forest data](https://arxiv.org/abs/1806.08371).
+
 ## Hands-on CosmoLab goal for fall 2019
 
 For the rest of the semester, we'll be developing coding/research tools with a practical goal in mind: look for evidence of dark matter interactions in Lyman-alpha data.
