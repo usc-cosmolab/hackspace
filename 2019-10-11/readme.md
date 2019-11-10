@@ -35,6 +35,8 @@ Otherwise, download and run the appropriate installer from [here](https://docs.c
 In brief, for most cosmolab purposes, this command will create an environment called `cosmolab`, which probably contains most of what you need:
 ```conda create --name cosmolab jupyterlab numpy scipy matplotlib cython python=3.7```
 
+To activate this environment, do ```conda activate cosmolab```, to deactivate it ```conda deactivate```.
+
 
 --------------------------
 ## Cosmic microwave background / power spectrum introduction (Siavash)
