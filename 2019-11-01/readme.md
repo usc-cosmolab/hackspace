@@ -9,5 +9,5 @@ Dr. Gluscevic gave a brief intro to general cosmology, covering the following qu
 
 ## Fitting a model to data
 
-We started talking about fitting a model to data, on an example of generic data, but will move on to Lyman-alpha data soon; see the notebook here. Solutions to this are here.
+We started talking about fitting a model to data, on an example of generic data, but will move on to Lyman-alpha data soon; see [here](fitting_model.md). Solutions to this are here.
 
