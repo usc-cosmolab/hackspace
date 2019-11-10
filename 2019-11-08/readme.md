@@ -3,9 +3,9 @@
 Attending: Vera Gluscevic, Tim Morton, Siavash Yasini, Aryan Rahimieh, Isabella Johansson, Karime Maamari, Remy Gerras, Sydney Feldman, Paul, Javier Zhao, Chris Lindsay, David Liu, Jack Lashner, Connor Powers. 
 
 
-## More fitting a model
+## More on fitting a model
 
-We also talked about chi^2, model parameter space, and constraints on parameter space from data. We plotted a "bad fit" to randomly generated data, as a warmup, and then continued exercise from previous meeting. Solutions to this are here.
+We also talked about chi^2, model parameter space, and constraints on parameter space from data. We plotted a "bad fit" to randomly generated data, as a warmup, and then continued exercise from previous meeting. Solutions to this are [here](fitting-model-solutions.ipynb).
 
 ## Intro to CLASS
 
