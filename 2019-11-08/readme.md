@@ -1,4 +1,4 @@
-# Nov 8, 2019
+# CosmoLab meeting: 11/08/19
 
 Attending: Vera Gluscevic, Tim Morton, Siavash Yasini, Aryan Rahimieh, Isabella Johansson, Karime Maamari, Remy Gerras, Sydney Feldman, Paul, Javier Zhao, Chris Lindsay, David Liu, Jack Lashner, Connor Powers. 
 
