@@ -8,9 +8,13 @@ This was a hands-on meeting. We did a quick recap on what was done so far in hac
 
 Note on Pk normalization: classy and the data points use different factors of h (Hubble parameter) when dealing with Pk; if you want the data to match the calculation, make sure you reconcile the normalizations.
 
+Suggested exercises: 
+- Plot Cl/Pk using classy
+
 Here is a sample code to produce Pk with the correct normalization using classy
 
 ```python
+import numpy as np
 from classy import Class
 
 # initialize class
@@ -37,14 +41,16 @@ k_min = 0.1
 k_max = 5
 n_points = 100
 
-K = np.logspace(np.log(k_min),np.log10(k_max),n_points) 
+K = np.logspace(np.log(k_min), np.log10(k_max), n_points) 
 
 #calculate Pk at all k values (note the normalization for k and P_k
-P_k = [cosmo.pk(k,0)*h**3 for k in K]
+h = parameters["h"]
+P_k = [cosmo.pk(k, 0)*h**3 for k in K]
 ```
+Now we can overplot this on top of our data
 
-Suggested exercises: 
-- Plot Cl/Pk using classy
+![](Pk_Ly_alpha.png)
+
 
 
  
