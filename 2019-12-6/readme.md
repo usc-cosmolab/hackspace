@@ -46,7 +46,7 @@ K = np.logspace(np.log(k_min), np.log10(k_max), n_points)
 
 #calculate Pk at all k values (note the normalization for k and P_k
 h = parameters["h"]
-P_k = [cosmo.pk(k, 0)*h**3 for k in K]
+P_k = [cosmo.pk(k*h, 0)*h**3 for k in K]
 ```
 Now we can overplot this on top of our data
 
