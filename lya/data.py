@@ -1,5 +1,6 @@
 from .conf import lya_data_path
-
+from theory import get_lcdm_pk
+import numpy as np
 
 class Data(object):
     def __init__(self, x, y, y_unc):
@@ -40,6 +41,8 @@ def plot_pk(params=None, filename=lya_data_path):
 
 
 def get_data_transfer_function():
+    
+   
     """Returns the data "transfer function" 
 
     Returns
@@ -47,3 +50,21 @@ def get_data_transfer_function():
     data : Data object
         Data object representing the ly-a data divided by LCDM p(k)
     """
+    
+    # 
+    pkncdm_data = load_lya_data()
+    
+    lcdm_pk = get_lcdm_pk(pkncdm_data.x)
+    
+    tk = np.sqrt(pkncdm_data.y / lcdm_pk)
+    
+    tk_unc = 0.5 * pkncdm_data.y_unc / lcdm_pk
+    
+    return Data(pkncdm_data.x, tk, tk_unc)
+
+  
+    
+    
+    
+    
+    
