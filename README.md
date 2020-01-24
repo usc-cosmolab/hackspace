@@ -1,5 +1,7 @@
 # usc-cosmolab-hackspace
 
+MY FORK!!! HAHAHAHA
+
 Materials from USC CosmoLab weekly meetings live here.
 
 Meetings have roughly three parts: Hacks, News, and Physics. In Fall 2019, the focus is on Hacks, with the main objective to provide astro grads, undergrads, and postdocs with computer-based tools for research. 
