@@ -1,5 +1,5 @@
 from .conf import lya_data_path
-from theory import get_lcdm_pk
+from .theory import get_lcdm_pk
 import numpy as np
 
 class Data(object):
