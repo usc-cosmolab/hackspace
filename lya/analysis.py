@@ -37,8 +37,8 @@ def residuals(pars, data):
     alpha, beta, gamma = pars
     
     
-    mod = model(data.k,alpha,beta,gamma)
-    res = data.P_k - mod
+    mod = model(data.x,alpha,beta,gamma)
+    res = data.y - mod
 
     return res
 
