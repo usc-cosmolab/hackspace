@@ -33,18 +33,12 @@ def residuals(pars, data):
     data : Data object (string)
         Data to be compared with model.
     """
-   
-    file=np.loadtxt(data)
-    k=file[:,0]
-    pk=file[:,1]
-    pkerr=file[:,2]
     
-    alpha=pars[0]
-    beta=pars[1]
-    gamma=pars[2]
+    alpha, beta, gamme = pars
     
-    mod=model(k,alpha,beta,gamma)
-    res=pk-mod
+    
+    mod = model(data.k,alpha,beta,gamma)
+    res = data.P_k - mod
 
     return res
 
