@@ -34,7 +34,7 @@ def residuals(pars, data):
         Data to be compared with model.
     """
     
-    alpha, beta, gamme = pars
+    alpha, beta, gamma = pars
     
     
     mod = model(data.k,alpha,beta,gamma)
