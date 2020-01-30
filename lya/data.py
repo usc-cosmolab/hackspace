@@ -51,16 +51,19 @@ def get_data_transfer_function():
         Data object representing the ly-a data divided by LCDM p(k)
     """
     
-    # 
-    pkncdm_data = load_lya_data()
+    p_data = load_lya_data()
+    #Loads experimental lyman alpha P(k)
     
-    lcdm_pk = get_lcdm_pk(pkncdm_data.x)
+    lcdm_pk = get_lcdm_pk(p_data.x)
+    #Analytic P(k) from class for cold dark matter w/ corresponing k
     
-    tk = np.sqrt(pkncdm_data.y / lcdm_pk)
+    tk = np.sqrt(p_data.y / lcdm_pk)
+    #Transfer function T(k)
+
+    tk_unc = .5 * p_data.y_unc / np.sqrt(lcdm_pk * p_data.x)
+    #Uncertanty in T(k)
     
-    tk_unc = 0.5 * pkncdm_data.y_unc / lcdm_pk
-    
-    return Data(pkncdm_data.x, tk, tk_unc)
+    return Data(p_data.x, tk, tk_unc)
 
   
     
