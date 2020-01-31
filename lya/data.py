@@ -50,7 +50,7 @@ def plot_pk(params=None, filename=lya_data_path):
         ax.errorbar(data.x, data.y, data.y_unc,
                 color='k', marker="o", ms=5, ls="")
 
-        return ax
+        return fig
 
     else:
         ... #TODO: assign this to Aryan
