@@ -27,6 +27,7 @@ def load_lya_data(filename=lya_data_path):
 
     data = Data(x, y, y_unc)
 
+
     return data
 
 def plot_pk(params=None, filename=lya_data_path):
@@ -42,7 +43,6 @@ def plot_pk(params=None, filename=lya_data_path):
     -------
     fig : matplotlib Figure instance
     """
-
     data = load_lya_data(filename)
 
     if params is None:
@@ -54,6 +54,7 @@ def plot_pk(params=None, filename=lya_data_path):
 
     else:
         ... #TODO: assign this to Aryan
+
 
 def get_data_transfer_function():
     """Returns the data "transfer function" 
