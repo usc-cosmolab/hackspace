@@ -1,11 +1,7 @@
 from .conf import lya_data_path
-<<<<<<< HEAD
 from .theory import get_lcdm_pk
 import numpy as np
-=======
-import numpy as np
 import matplotlib.pyplot as plt
->>>>>>> e75ecf12f37099a7fba176a5c225e4abaffa1abe
 
 class Data(object):
     def __init__(self, x, y, y_unc):
