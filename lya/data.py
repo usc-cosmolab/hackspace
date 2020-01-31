@@ -1,4 +1,5 @@
 from .conf import lya_data_path
+from .theory import get_lcdm_pk
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -56,6 +57,8 @@ def plot_pk(params=None, filename=lya_data_path):
         ... #TODO: assign this to Aryan
 
 def get_data_transfer_function():
+    
+   
     """Returns the data "transfer function" 
 
     Returns
@@ -63,3 +66,25 @@ def get_data_transfer_function():
     data : Data object
         Data object representing the ly-a data divided by LCDM p(k)
     """
+    
+    #Loads experimental lyman alpha P(k)
+    p_data = load_lya_data()
+    
+    #Analytic P(k) from class for cold dark matter w/ corresponing k
+    lcdm_pk = get_lcdm_pk(p_data.x)
+    
+    #Transfer function T(k)
+    tk = np.sqrt(p_data.y / lcdm_pk)
+    
+    #Uncertanty in T(k)
+    tk_unc = .5 * p_data.y_unc / np.sqrt(lcdm_pk * p_data.y)
+    
+    
+    return Data(p_data.x, tk, tk_unc)
+
+  
+    
+    
+    
+    
+    
