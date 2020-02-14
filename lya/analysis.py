@@ -47,6 +47,7 @@ def residuals(pars, data):
 def objective(pars, data):
     """Objective function to miminize
     """
+    
 
 
 def get_best_fit():

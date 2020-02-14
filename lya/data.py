@@ -1,6 +1,7 @@
 from .conf import lya_data_path
 import numpy as np
 import matplotlib.pyplot as plt
+from theory import get_theory_pk
 
 class Data(object):
     def __init__(self, x, y, y_unc):
@@ -43,18 +44,23 @@ def plot_pk(params=None, filename=lya_data_path):
     -------
     fig : matplotlib Figure instance
     """
+    panel = (1,2)[bool(params)]
+    
     data = load_lya_data(filename)
+    
+    fig, ax = plt.subplots(panel, 1)
 
     if params is None:
-        fig, ax = plt.subplots(1, 1)
-        ax.errorbar(data.x, data.y, data.y_unc,
-                color='k', marker="o", ms=5, ls="")
-
-        return fig
-
+        ax=[ax]
+        
     else:
-        ... #TODO: assign this to Aryan
+        ax[1]
+        pk=get_theory_pk(data.x,params)
+    
+    ax[0].errorbar(data.x, data.y, data.y_unc,
+    color='k', marker="o", ms=5, ls="")
 
+    return fig
 
 def get_data_transfer_function():
     """Returns the data "transfer function" 
