@@ -1,24 +1,24 @@
 from .conf import lcdm_params
 
 def get_lcdm_pk(k, params):
-    """Returns theoretical p(k) at z=0 given k values with given cosmo params
+	"""Returns theoretical p(k) at z=0 given k values with given cosmo params
 
-    Parameters
-    ----------
-    k : array-like
-        k values at which to evaluate theoretical p(k)
+	Parameters
+	----------
+	k : array-like
+		k values at which to evaluate theoretical p(k)
 
-    Returns
-    -------
-    Pk*norm : array
-       Theoretical p(k), with proper normalization
-    """
+	Returns
+	-------
+	Pk*norm : array
+	   Theoretical p(k), with proper normalization
+	"""
 	ks = k
 	params = {'delH': 4.6e-5, 'H0': 67.81, 'Omegam0': 0.3080, 'Omegab0': 0.0484, 'sigma8': 0.8149, 'ns': 0.9677, 'Tcmb0': 2.7255}
 
 	get_theory_pk(k,params)
 
-    return Pk
+	return Pk
 
 def get_theory_pk(k, params):
     """Returns theoretical p(k) at z=0 given k values with given cosmo params
