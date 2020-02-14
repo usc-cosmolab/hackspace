@@ -1,13 +1,25 @@
+import numpy as np
+
+
+
 def model(k, alpha, beta, gamma):
     """Returns values of alpha-beta-gamma model at given k values
 
     Parameters
     ----------
-    k : array-like
+    k : array
 
     alpha, beta, gamma : float
         Parameters of model
     """
+
+
+    T = (1 + (alpha*k)**beta)**gamma
+
+    return T
+
+
+
 
 
 def residuals(pars, data):
@@ -18,9 +30,18 @@ def residuals(pars, data):
     pars : array-like
         [alpha, beta, gamma] parameters.
 
-    data : Data object
+    data : Data object (string)
         Data to be compared with model.
     """
+    
+    alpha, beta, gamma = pars
+    
+    
+    mod = model(data.x,alpha,beta,gamma)
+    res = data.y - mod
+
+    return res
+
 
     return data.y - model(k, *pars)
 
