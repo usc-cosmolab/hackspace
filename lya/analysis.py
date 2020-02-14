@@ -43,13 +43,11 @@ def residuals(pars, data):
     return res
 
 
-    return data.y - model(k, *pars)
-
 def objective(pars, data):
     """Objective function to miminize
     """
     
-    return ((residuals(*pars, data)**2 / data.uncertainty**2).sum()
+    return (residuals(*pars, data)**2 / data.unc**2).sum()
 
 def get_best_fit():
     """Compute best-fit model parameters
