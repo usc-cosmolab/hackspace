@@ -39,5 +39,12 @@ def test_objective():
 
 
 def test_get_best_fit():
-    for x in get_best_fit():
+    pars = get_best_fit()
+    for x in pars:
         assert np.isfinite(x)
+
+    data = load_lya_data()
+    objective_best = objective(pars, data)
+    objective_worse = object(pars, example_abg)
+
+    assert objective_best < objective_worse
