@@ -59,7 +59,11 @@ else:
     ax[0].errorbar(data.x, data.y, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
     ax[0].plot(data.x, pk, color='r',**kwargs)
     ax[1].errorbar(data.x, res, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
-
+    ax[1].set_xlabel('k $Mpc^{-1}$')
+    ax[0].set_ylabel('P(k)')
+    ax[1].set_ylabel('Residual')
+    
+    return fig
 
 def get_data_transfer_function():
     
