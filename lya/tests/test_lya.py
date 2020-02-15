@@ -5,7 +5,7 @@ from ..analysis import model, residuals, objective, get_best_fit
 from ..data import load_lya_data, plot_pk, get_data_transfer_function
 from ..conf import lcdm_params
 
-example_abg = (0.02, 6, -5)
+example_abg = (0.02, 6, -5)  # alpha, beta, gamma
 
 
 def test_load_ly_data():
@@ -45,6 +45,6 @@ def test_get_best_fit():
 
     data = load_lya_data()
     objective_best = objective(pars, data)
-    objective_worse = object(pars, example_abg)
+    objective_worse = objective(pars, example_abg)
 
     assert objective_best < objective_worse

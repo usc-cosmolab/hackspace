@@ -1,7 +1,6 @@
 import numpy as np
 
 
-
 def model(k, alpha, beta, gamma):
     """Returns values of alpha-beta-gamma model at given k values
 
@@ -13,13 +12,9 @@ def model(k, alpha, beta, gamma):
         Parameters of model
     """
 
-
-    T = (1 + (alpha*k)**beta)**gamma
+    T = (1 + (alpha * k) ** beta) ** gamma
 
     return T
-
-
-
 
 
 def residuals(pars, data):
@@ -33,11 +28,10 @@ def residuals(pars, data):
     data : Data object (string)
         Data to be compared with model.
     """
-    
+
     alpha, beta, gamma = pars
-    
-    
-    mod = model(data.x,alpha,beta,gamma)
+
+    mod = model(data.x, alpha, beta, gamma)
     res = data.y - mod
 
     return res
@@ -46,9 +40,9 @@ def residuals(pars, data):
 def objective(pars, data):
     """Objective function to miminize
     """
-    
 
-    return (residuals(*pars, data)**2 / data.unc**2).sum()
+
+    return (residuals(pars, data) ** 2 / data.unc ** 2).sum()
 
 def get_best_fit():
     """Compute best-fit model parameters
