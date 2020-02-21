@@ -1,4 +1,6 @@
 import numpy as np
+from .data import get_data_transfer_function
+from scipy.optimize import minimize
 
 
 def model(k, alpha, beta, gamma):
@@ -53,3 +55,10 @@ def get_best_fit():
     pars : array-like
         Best-fit [alpha, beta, gamma] parameters 
     """
+
+    data = get_data_transfer_function()
+    f = lambda pars: objective(pars, data)
+    res = minimize(f, (0, 7, 0))
+
+    return res.x
+
