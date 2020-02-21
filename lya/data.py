@@ -2,7 +2,7 @@ from .conf import lya_data_path
 from .theory import get_lcdm_pk
 import numpy as np
 import matplotlib.pyplot as plt
-from theory import get_theory_pk
+from .theory import get_theory_pk
 
 
 class Data(object):
@@ -47,19 +47,22 @@ Returns
 fig : matplotlib Figure instance
 """
 
-if params is None:
-       plt.errorbar(data.x, data.y, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
+    data = load_lya_data(filename)
+
+    if params is None:
+        fig, ax = plt.subplots(1,1)
+        ax.errorbar(data.x, data.y, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
     
-else:
-    pk = get_theory_pk(data.x,params)
-    res = data.y - pk
-    fig, ax = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]})
-    ax[0].errorbar(data.x, data.y, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
-    ax[0].plot(data.x, pk, color='r',**kwargs)
-    ax[1].errorbar(data.x, res, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
-    ax[1].set_xlabel('k $Mpc^{-1}$')
-    ax[0].set_ylabel('P(k)')
-    ax[1].set_ylabel('Residual')
+    else:
+        pk = get_theory_pk(data.x,params)
+        res = data.y - pk
+        fig, ax = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]})
+        ax[0].errorbar(data.x, data.y, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
+        ax[0].plot(data.x, pk, color='r',**kwargs)
+        ax[1].errorbar(data.x, res, data.y_unc, color='k',marker='o',ms=5,ls='', **kwargs)
+        ax[1].set_xlabel('k $Mpc^{-1}$')
+        ax[0].set_ylabel('P(k)')
+        ax[1].set_ylabel('Residual')
     
     return fig
 
