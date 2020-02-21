@@ -34,18 +34,18 @@ def load_lya_data(filename=lya_data_path):
     return data
 
 def plot_pk(params=None, filename=lya_data_path, color='k',marker='o',ms=5,ls='',**kwargs):
-"""Plot p(k) power spectrum data and theory, with panel for residuals
+    """Plot p(k) power spectrum data and theory, with panel for residuals
 
-Parameters
-----------
-params : dict or None
-    Cosmological parameter dictionary; if None, then plot only data
+    Parameters
+    ----------
+    params : dict or None
+        Cosmological parameter dictionary; if None, then plot only data
 
 
-Returns
--------
-fig : matplotlib Figure instance
-"""
+    Returns
+    -------
+    fig : matplotlib Figure instance
+    """
 
     data = load_lya_data(filename)
 
