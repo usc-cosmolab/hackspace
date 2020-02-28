@@ -1,4 +1,10 @@
-lya_data_path = "../data/lyman-alpha.txt" 
+import os
+
+# get the lya data path
+path = os.path.abspath(__file__)
+lya_data_path = os.path.abspath(os.path.join("path", "..", "data", "lyman-alpha.txt"))
+
+# set up comological parameters
 lcdm_params = {
     "omega_b": 0.02233,
     "omega_cdm": 0.1198,
