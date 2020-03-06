@@ -43,6 +43,7 @@ def objective(pars, data):
     """Objective function to miminize
     """
 
+
     return (residuals(pars, data) ** 2 / data.y_unc ** 2).sum()
 
 
