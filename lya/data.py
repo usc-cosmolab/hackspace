@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import warnings
 
 plt.rcParams['font.size'] = 13
 plt.rcParams['font.family'] = 'stix'
@@ -83,8 +84,10 @@ def plot_pk(params=None,
 
         pk = get_theory_pk(data.x, params)
 
-        # uncomment this for testing
-        #pk = data.y + 1
+        #TODO Remove this and replace with assert after get_theory_pk is fixed
+        if pk is None:
+            pk = 0 * data.y
+            warnings.warn("Theoretical Pk is None. Setting it to 0...")
 
         res = data.y - pk
 
