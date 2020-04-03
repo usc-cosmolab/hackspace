@@ -2,7 +2,7 @@ import os
 
 # get the lya data path
 path = os.path.abspath(__file__)
-lya_data_path = os.path.abspath(os.path.join("path", "..", "data", "lyman-alpha.txt"))
+lya_data_path = os.path.join(os.path.dirname(path), "..", "data", "lyman-alpha.txt")
 
 # set up comological parameters
 lcdm_params = {
